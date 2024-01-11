@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Card Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1><br>
+    <a href="/">Back to Index</a><br>
+    <h2>Cerny Rytir</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Set</th>
+            <th>Type</th>
+            <th>Rarity</th>
+            <th>Language</th>
+            <th>Condition</th>
+            <th>Stock</th>
+            <th>Price</th>
+        </tr>
+        {% for result in cr_results %}
+        <tr>
+            <td>{{ result['Name'] }}</td>
+            <td>{{ result['Set'] }}</td>
+            <td>{{ result['Type'] }}</td>
+            <td>{{ result['Rarity'] }}</td>
+            <td>{{ result['Language'] }}</td>
+            <td>{{ result['Condition'] }}</td>
+            <td>{{ result['Stock'] }}</td>
+            <td>{{ result['Price'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <h2>Black Lotus</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Set</th>
+            <th>Type</th>
+            <th>Rarity</th>
+            <th>Language</th>
+            <th>Condition</th>
+            <th>Stock</th>
+            <th>Price</th>
+        </tr>
+        {% for result in bl_results %}
+        <tr>
+            <td>{{ result['Name'] }}</td>
+            <td>{{ result['Set'] }}</td>
+            <td>{{ result['Type'] }}</td>
+            <td>{{ result['Rarity'] }}</td>
+            <td>{{ result['Language'] }}</td>
+            <td>{{ result['Condition'] }}</td>
+            <td>{{ result['Stock'] }}</td>
+            <td>{{ result['Price'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <h2>Najada Games</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Set</th>
+            <th>Type</th>
+            <th>Rarity</th>
+            <th>Language</th>
+            <th>Condition</th>
+            <th>Stock</th>
+            <th>Price</th>
+        </tr>
+        {% for result in ng_results %}
+        <tr>
+            <td>{{ result['Name'] }}</td>
+            <td>{{ result['Set'] }}</td>
+            <td>{{ result['Type'] }}</td>
+            <td>{{ result['Rarity'] }}</td>
+            <td>{{ result['Language'] }}</td>
+            <td>{{ result['Condition'] }}</td>
+            <td>{{ result['Stock'] }}</td>
+            <td>{{ result['Price'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
