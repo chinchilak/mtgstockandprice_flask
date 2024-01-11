@@ -12,4 +12,4 @@ RUN playwright install-deps
 
 EXPOSE 5000
 
-CMD ["python", "app_async.py"]
+CMD ["python", "app.py"]
