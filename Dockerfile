@@ -10,6 +10,6 @@ RUN apt-get update && apt-get upgrade -y
 RUN playwright install
 RUN playwright install-deps
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["python", "app.py"]
