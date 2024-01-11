@@ -7,9 +7,9 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get upgrade -y
-RUN playwright install
+RUN playwright install chromium
 RUN playwright install-deps
 
-EXPOSE 8080
+EXPOSE 5000
 
 CMD ["python", "app.py"]
